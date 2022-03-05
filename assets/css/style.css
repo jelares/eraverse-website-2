@@ -504,7 +504,8 @@ section {
   top: 9px;
 }
 .about .content .about-btn:hover {
-  background: #7bbad7;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
 }
 .about .icon-boxes .icon-box {
   margin-top: 30px;
@@ -592,6 +593,29 @@ section {
   color: #fff;
 }
 
+.services .icon-box:hover a {
+  color: #111;
+}
+
+.services a {
+  margin:0;
+  padding:0;
+  display:inline-block;
+  text-decoration: none;
+  color: #EB863E;
+}
+
+.services a:hover {
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  color: white !important;
+}
+
+.services a:visited{
+  color: inherit;
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -669,6 +693,7 @@ section {
 }
 .cta .cta-btn:hover {
   border-color: #fff;
+  background: white;
 }
 
 /*--------------------------------------------------------------
@@ -677,6 +702,19 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+
+.on-black h2 {
+  color: white;
+}
+
+.on-black h4 {
+  color: white;
+}
+
+.on-black p {
+  color: white;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -899,12 +937,23 @@ section {
 --------------------------------------------------------------*/
 .team .member {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
   position: relative;
+  width:100%;
+
 }
 .team .member .pic {
   overflow: hidden;
+  width:100%;
+
 }
+
+.team .member .pic img {
+  height:50vh;
+  width: 100% !important;
+  object-fit: cover;
+}
+
 .team .member .member-info {
   position: absolute;
   top: 85%;
@@ -919,8 +968,14 @@ section {
   transition: max-height 0.5s ease-in-out;
 }
 .team .member:hover .member-info {
-  max-height: 300px;
+  max-height: 250px;
 }
+
+.team .member p {
+  font-size: 13px;
+  color: #444444;
+}
+
 .team .member h4 {
   font-weight: 700;
   margin-bottom: 10px;
@@ -960,7 +1015,7 @@ section {
 }
 @media (max-width: 992px) {
   .team .member {
-    margin-bottom: 110px;
+    margin-bottom: 160px;
   }
 }
 
